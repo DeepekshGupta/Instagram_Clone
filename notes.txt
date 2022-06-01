@@ -1,0 +1,22 @@
+1. to display local images in react, we have to require them, instead, create a separate folder for instead
+2. Material UI: used to take prebuild react components
+                Avatar component: if no image is given, then it'll display simple user image, if invalid image is given,
+                                 itll use the first letter from the alt to display
+3. Firebase can scale
+4. Node js is server side JS, Firebase offers CLoud Functions
+    cloud finctions can be writtern in node js
+    they can be scalled up or down
+5. Firebase gives u a real time database
+6. firebase is a hybrid b/w sql nd noSQL
+
+7. UseEffect runs a piece of code everytime a certain condition is met: 
+    runs every time a variable changes
+      useEffect(() => {
+                        first
+                    
+                        return () => {
+                        second
+                        }
+                    }, [third])
+    
+    if [third] == [] => run the code above it once every time the page refreshes

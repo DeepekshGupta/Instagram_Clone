@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Posts from './components/Posts';
 import './styles/App.css';
+import {db} from "./firebase"
+import { collection, getDoc, addDoc, onSnapshot } from 'firebase/firestore';
 
 function App() {
   const [posts, setPosts] = useState([
@@ -16,6 +18,20 @@ function App() {
     }
   
   ]);
+
+  // useEffect(() => {
+    // const CollectionRef = collection(db, "posts").onSnapshot(snapshot => {
+    //   setPosts(getDoc(CollectionRef)
+    //   .then((Response)=> {setPosts(Response.docs.map((item)=>{
+    //     return {...item.data(), id: item.id}
+    //   }))}))
+    // } );
+    // db.collection("posts").on
+  //   return () => {
+  //     second
+  //   }
+  // }, [third])
+  
 
   function post(props){
     return ( <Posts
