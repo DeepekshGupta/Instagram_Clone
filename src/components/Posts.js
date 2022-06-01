@@ -12,7 +12,7 @@ export default function Posts({username, caption, imgURL}) {
                 alt={username}
                 src="#"/>
         
-        <h3>Username</h3>
+        <h3>{username}</h3>
         </div>
         {/* header > profile pic > username  */}
     
